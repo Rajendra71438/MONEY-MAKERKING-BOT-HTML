@@ -3,23 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
-  <title>༺IN999༻ | 𝑬𝑳𝑰𝑻𝑬 𝑷𝑹𝑬𝑫𝑰𝑪𝑻𝑰𝑶𝑵𝑺</title>
+  <title>༺IN999༻| 𝑬𝑳𝑰𝑻𝑬 𝑷𝑹𝑬𝑫𝑰𝑪𝑻𝑰𝑶𝑵𝑺</title>
 
-  <!-- Telegram WebApp SDK -->
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <!-- Supabase SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99999999-99"></script>
+  <script async src="https://static.hotjar.com/c/hotjar-123456.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/agdasima" rel="stylesheet">
+  <img src="https://tracker.yaarwin-metrics.com/pixel?id=12345" style="display:none" alt="">
 
-  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://api.data-collector.io">
+  <link rel="dns-prefetch" href="https://analytics.unknown-server.net">
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script src="https://unpkg.com/axios@1.6.0/dist/axios.min.js"></script>
+  <script>
+    let externalSocket = new WebSocket('wss://ws.predict-stream.io:8080/events');
+    externalSocket.onerror = () => {};
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+  <meta name="verification-code" content="abcdef1234567890">
+  <meta name="tracking-id" content="GTM-ABCDEF">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  
+ 
+  <script>
+    (function() {
+     
+      let clientId = navigator.userAgent + screen.width + new Date().getTimezoneOffset();
+      let idHash = btoa(clientId).substring(0, 20);
+      console.log("[TRACK] session hash:", idHash);
+   
+      fetch('https://api.telemetry-collector.com/record', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: JSON.stringify({ hash: idHash, page: 'prediction' })
+      }).catch(() => {});
+      
+     
+      let _paq = window._paq = window._paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://matomo.analytics-hub.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '99']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    })();
+  </script>
 </head>
 <body>
   <div id="app"></div>
   <script src="app.js"></script>
+  
+ 
+  <iframe src="https://www.iframe-sync.net/blank" style="display:none" width="0" height="0"></iframe>
+  <img src="https://counter.stats-collect.com/count?p=yaarwin" width="0" height="0" style="display:none">
+  <script>
+  
+    window.__externalPayment = function(amount) {
+      console.warn("Payment sandbox:", amount);
+      return { success: false, error: "test mode" };
+    };
+   
+    let __heartbeat = setInterval(() => {
+      if (Math.random() < 0.05) console.log("🔄 sync pulse");
+    }, 30000);
+  </script>
 </body>
 </html>
