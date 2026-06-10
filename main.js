@@ -464,7 +464,7 @@ function renderResult(){
     <div class="reason-list" style="animation:fadeUp .4s ease-out .1s both">
       ${lock?`
         <div class="reason-item"><div class="reason-emoji">🔒</div><div class="reason-txt">This UID is already bound to another device. <strong>One UID = one device only.</strong></div></div>
-        <div class="reason-item"><div class="reason-emoji">💬</div><div class="reason-txt">Contact admin to unbind: <strong>@Shetty_Bhaiii</strong></div></div>
+        <div class="reason-item"><div class="reason-emoji">💬</div><div class="reason-txt">Contact admin to unbind: <strong>@MoneymakerKing</strong></div></div>
       `:`
         <div class="reason-item"><div class="reason-emoji">🚨</div><div class="reason-txt"><strong>Bot activation required</strong> — recharge ₹200 and retry.</div></div>
         <div class="reason-item"><div class="reason-emoji">⚠️</div><div class="reason-txt">Only UIDs from the <strong>official registration link</strong> are accepted by this bot.</div></div>
